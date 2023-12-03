@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-shadow {
+    text-shadow: 0 0 5px #ff7300;
+}
+
+#point {
+  position: relative;
+  animation: mymove 1s ease infinite;
+  -moz-animation: mymove 1s ease infinite;
+  -webkit-animation: mymove 1s ease infinite;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@keyframes mymove {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ff7300;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ff7300;
+  }
+}
+
+@-webkit-keyframes mymove {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ff7300;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ff7300;
+  }
+}
+
+@-moz-keyframes mymove {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ff7300;
+  }
+
+  50% {
+    opacity: 0;
+    text-shadow: none;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 20px #ff7300;
+  }
+}
